@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Юрманова](https://up.htmlacademy.ru/adaptive/14/user/412273).
-* Наставник: `Неизвестно`.
+* Наставник: `Екатерина Комнатная`.
 
 ---
 
