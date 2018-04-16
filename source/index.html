@@ -6,25 +6,27 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__item page-header__item--active page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86"
-        height="35" alt="Mishka">
-      </a>
-      <nav class="page-header__nav">
-        <button class="page-header__btn" type="button">Открыть меню</button>
-        <ul class="page-header__list">
-          <li class="page-header__item">
+      <nav class="main-nav">
+        <a class="main-nav__logo main-nav__logo--active">
+          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86"
+          height="35" alt="Mishka">
+        </a>
+        <button class="main-nav__btn" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="page-header__item">
+          <li class="site-list__item">
             <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--search">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item site-list__item--cart">
+            <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
-      <label class="page-header__item page-header__item--search">
-        <input type="text" name="search" value="Поиск по сайту">
-      </label>
-      <a class="page-header__item page-header__item--cart" href="#">Корзина: пока пуста</a>
     </header>
 
     <main class="page-main">
@@ -34,43 +36,41 @@
         <h2 class="offers__title">Милые штуки ручной работы для дома</h2>
         <ul class="offers__list">
           <li class="offers__item offers__item--interior">
-            <a href="#">
+            <a class="offers__item-link" href="#">
               <h3 class="offers__item-title">Предметы интерьера</h3>
             </a>
           </li>
           <li class="offers__item offers__item--toys">
-            <a href="#">
+            <a class="offers__item-link" href="#">
               <h3 class="offers__item-title">Детские игрушки</h3>
             </a>
           </li>
-          <li class="offers__item offers__item--active">
-            <a>
-              <h3 class="offers__item-title">Вязаные корзинки</h3>
-            </a>
-            <p class="offers__item-of-week">Товар недели</p>
-            <p class="offers__item-description">Экологически чистая пряжа,
-              ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="offers__item-table">
-              <tr>
-                <td class="offers__field">Цвет:</td>
-                <td class="offers__value">«Тиффани»/серый</td>
-              </tr>
-              <tr>
-                <td class="offers__field">Диаметр:</td>
-                <td class="offers__value">25 см</td>
-              </tr>
-              <tr>
-                <td class="offers__field">Высота:</td>
-                <td class="offers__value">15 см</td>
-              </tr>
-            </table>
-            <p class="offers__item-image">
-              <img src="img/offer.jpg" width="260" height="315" alt="Вязаные корзинки">
-            </p>
-            <p class="offers__item-cost">Цена: 990 руб.</p>
-            <a class="offers__item-btn button" href="#">Заказать</a>
-          </li>
         </ul>
+        <div class="offers__product">
+          <h3 class="offers__product-title">Вязаные корзинки</h3>
+          <p class="offers__product-of-week">Товар недели</p>
+          <p class="offers__product-description">Экологически чистая пряжа,
+            ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="offers__product-table">
+            <tr>
+              <td class="offers__field">Цвет:</td>
+              <td class="offers__value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="offers__field">Диаметр:</td>
+              <td class="offers__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="offers__field">Высота:</td>
+              <td class="offers__value">15 см</td>
+            </tr>
+          </table>
+          <p class="offers__product-image">
+            <img src="img/offer.jpg" width="260" height="315" alt="Вязаные корзинки">
+          </p>
+          <p class="offers__product-cost">Цена: 990 руб.</p>
+          <a class="offers__product-btn button" href="#">Заказать</a>
+        </div>
       </section>
 
       <section class="features">
@@ -95,7 +95,7 @@
             стильными, а также набирают больше лайков!
           </p>
           <div class="reviews__author">
-            <p class="reviews__author-name">Анастасия Красильникова</p>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
             <p class="reviews__author-link"><a href="#">@misssssiskras</a></p>
           </div>
         </blockquote>

@@ -6,25 +6,27 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__item page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86"
-        height="35" alt="Mishka">
-      </a>
-      <nav class="page-header__nav">
-        <button class="page-header__btn" type="button">Открыть меню</button>
-        <ul class="page-header__list">
-          <li class="page-header__item">
+      <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86"
+          height="35" alt="Mishka">
+        </a>
+        <button class="main-nav__btn" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="page-header__item page-header__item--active">
+          <li class="site-list__item site-list__item--active">
             <a>Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--search">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item site-list__item--cart">
+            <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
-      <label class="page-header__item page-header__item--search">
-        <input type="text" name="search" value="Поиск по сайту">
-      </label>
-      <a class="page-header__item page-header__item--cart" href="#">Корзина: пока пуста</a>
     </header>
 
     <main class="page-main">
@@ -79,35 +81,36 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="order-form__fieldset order-form__fieldset--name">
+          <fieldset class="order-form__fieldset order-form__fieldset--client">
             <legend class="order-form__title">ФИО</legend>
             <ul class="order-form__list">
               <li class="order-form__item">
-                <label for="item-name">Имя:</label>
-                <input type="text" name="name" value="" placeholder="Введите ваше имя*" id="item-name">
+                <label class="order-form__label-client" for="item-name">Имя:</label>
+                <input class="order-form__input" type="text" name="name" value="" placeholder="Введите ваше имя*" id="item-name">
               </li>
               <li class="order-form__item">
-                <label for="item-surname">Фамилия:</label>
-                <input type="text" name="surname" value="" placeholder="Укажите фамилию*" id="item-surname">
+                <label class="order-form__label-client" for="item-surname">Фамилия:</label>
+                <input class="order-form__input" type="text" name="surname" value="" placeholder="Укажите фамилию*" id="item-surname">
               </li>
               <li class="order-form__item">
-                <label for="item-middle-name">Отчество:</label>
-                <input type="text" name="middle-name" value="" placeholder="Отчество, если желаете" id="item-middle-name">
+                <label class="order-form__label-client" for="item-middle-name">Отчество:</label>
+                <input class="order-form__input" type="text" name="middle-name" value="" placeholder="Отчество, если желаете" id="item-middle-name">
               </li>
             </ul>
           </fieldset>
           <fieldset class="order-form__fieldset order-form__fieldset--phone">
             <legend class="order-form__title">Тел</legend>
-            <input type="tel" name="phone" value="" placeholder="+7 ХХХ ХХ ХХ*" id="item-phone">
+            <input class="order-form__input order-form__input--tel" type="tel" name="phone" value="" placeholder="+7 ХХХ ХХ ХХ*" id="item-phone">
           </fieldset>
           <fieldset class="order-form__mail">
             <legend class="order-form__title">E-mail</legend>
-            <input type="email" name="mail" value="" placeholder="Ваш Email*" id="item-mail">
+            <input class="order-form__input order-form__input--mail" type="email" name="mail" value="" placeholder="Ваш Email*" id="item-mail">
           </fieldset>
           <fieldset class="order-form__fieldset order-form__fieldset--message">
-            <legend>Доп</legend>
-            <textarea name="message" placeholder="Опишите все ваши пожелания к заказу" id="item-message"></textarea>
+            <legend class="order-form__title">Доп</legend>
+            <textarea class="order-form__input--message" name="message" placeholder="Опишите все ваши пожелания к заказу" id="item-message"></textarea>
           </fieldset>
+          <p class="order-form__text"><sup>*</sup>Поля обязательны для заполнения</p>
           <button class="order-form__btn button" type="submit">Отправить заказ</button>
         </form>
       </section>
