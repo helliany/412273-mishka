@@ -1,0 +1,32 @@
+.reviews__title {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reviews__author-link {
+  font-size: 17px;
+  color: #444444;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+  }
+}
