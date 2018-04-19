@@ -12,13 +12,11 @@
 .contacts__link {
   color: #444444;
   outline: none;
-}
-
-.contacts__link:hover,
-.contacts__link:focus {
-  color: #46c1ae;
-}
-
-.contacts-link:active {
-  color: rgba(70, 193, 174, 0.3);
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+  }
 }

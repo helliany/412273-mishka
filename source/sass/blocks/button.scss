@@ -9,15 +9,13 @@
   outline: none;
   border: 2px solid #444444;
   cursor: pointer;
-}
-
-.button:hover,
-.button:focus {
-  color: #ffffff;
-  background-color: #444444;
-}
-
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #444444;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+  }
 }
