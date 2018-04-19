@@ -1,0 +1,23 @@
+.button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444444;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid #444444;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #444444;
+}

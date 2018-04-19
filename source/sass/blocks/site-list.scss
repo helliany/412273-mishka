@@ -1,0 +1,27 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  list-style: none;
+}
+
+.site-list__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-list__item-link {
+  color: #000000;
+  outline: none;
+}
+
+.site-list__item-link:hover,
+.site-list__item-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-list__item-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,91 @@
+.offers {
+  line-height: 24px;
+}
+
+.offers__wrapper {
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+}
+
+.offers__title {
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #010000;
+}
+
+.offers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offers__item-title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.offers__item-link {
+  color: #ffffff;
+  outline: none;
+}
+
+.offers__item--interior {
+  background-color: #63d1bb;
+}
+
+.offers__item--toys {
+  background-color: #56c3b2;
+}
+
+.offers__item-link--interior:hover,
+.offers__item-link--interior:focus {
+  background-color: #59d5bc;
+}
+
+.offers__item-link--interior:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #59d5bc;
+}
+
+.offers__item-link--toys:hover,
+.offers__item-link--toys:focus {
+  background-color: #46c1ae;
+}
+
+.offers__item-link--toys:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #46c1ae;
+}
+
+.offers__product-title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.offers__product-of-week {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.offers__product-table {
+  line-height: 20px;
+}
+
+.offers__product-cost {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.offers__product-btn {
+  font-size: 17px;
+}

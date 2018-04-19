@@ -1,0 +1,30 @@
+.product__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product__link {
+  color: #000000;
+  outline: none;
+}
+
+.product__link:hover,
+.product__link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.product__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.product__description {
+  font-size: 13px;
+}
+
+.product__price {
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}

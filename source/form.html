@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -14,23 +15,25 @@
         <button class="main-nav__btn" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>Вязание на заказ</a>
+            <a class="site-list__item-link">Вязание на заказ</a>
           </li>
           <li class="site-list__item site-list__item--search">
-            <a href="#">Поиск по сайту</a>
+            <a class="site-list__item-link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item site-list__item--cart">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="site-list__item-link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Вязание на заказ</h1>
+      <div class="page-main__title-wrapper">
+        <h1 class="page-main__title">Вязание на заказ</h1>
+      </div>
 
       <section class="order">
         <h2 class="visually-hidden">Форма заказа</h2>
@@ -85,15 +88,15 @@
             <legend class="order-form__title">ФИО</legend>
             <ul class="order-form__list">
               <li class="order-form__item">
-                <label class="order-form__label-client" for="item-name">Имя:</label>
+                <label class="order-form__label order-form__label--client" for="item-name">Имя:</label>
                 <input class="order-form__input" type="text" name="name" value="" placeholder="Введите ваше имя*" id="item-name">
               </li>
               <li class="order-form__item">
-                <label class="order-form__label-client" for="item-surname">Фамилия:</label>
+                <label class="order-form__label order-form__label--client" for="item-surname">Фамилия:</label>
                 <input class="order-form__input" type="text" name="surname" value="" placeholder="Укажите фамилию*" id="item-surname">
               </li>
               <li class="order-form__item">
-                <label class="order-form__label-client" for="item-middle-name">Отчество:</label>
+                <label class="order-form__label order-form__label--client" for="item-middle-name">Отчество:</label>
                 <input class="order-form__input" type="text" name="middle-name" value="" placeholder="Отчество, если желаете" id="item-middle-name">
               </li>
             </ul>
@@ -102,7 +105,7 @@
             <legend class="order-form__title">Тел</legend>
             <input class="order-form__input order-form__input--tel" type="tel" name="phone" value="" placeholder="+7 ХХХ ХХ ХХ*" id="item-phone">
           </fieldset>
-          <fieldset class="order-form__mail">
+          <fieldset class="order-form__fieldset order-form__mail">
             <legend class="order-form__title">E-mail</legend>
             <input class="order-form__input order-form__input--mail" type="email" name="mail" value="" placeholder="Ваш Email*" id="item-mail">
           </fieldset>
@@ -140,6 +143,8 @@
         <span class="copyright__text">Разработано</span>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
+          <img class="copyright__logo-image" src="img/logo-htmlacademy.svg" width="27"
+          height="34" alt="HTML Academy">
         </a>
       </div>
     </footer>
