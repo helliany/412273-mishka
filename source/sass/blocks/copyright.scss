@@ -1,6 +1,19 @@
 .copyright {
+  padding: 22px 69px;
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
   color: #000000;
+}
+
+.copyright__text {
+  padding-right: 30px;
+  vertical-align: middle;
+}
+
+.copyright__logo {
+  display: inline-block;
+  margin-left: -4px;
+  vertical-align: top;
+  line-height: 0;
 }

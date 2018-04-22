@@ -1,18 +1,26 @@
 .site-list {
-  margin: 0;
-  padding: 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-  list-style: none;
 }
 
 .site-list__item {
   border-bottom: 1px solid #ececec;
 }
 
+.site-list__item {
+  &--new,
+  &--sale {
+  display: none;
+  }
+}
+
 .site-list__item-link {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 75px;
   color: #000000;
   outline: none;
 
@@ -23,5 +31,74 @@
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    border: none;
+
+    &--search {
+      width: 85px;
+    }
+
+    &--cart {
+      width: 265px;
+      text-align: right;
+    }
+  }
+
+  .site-list__item-link {
+    padding-left: 0;
+  }
+
+  .site-list--nav {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    order: 1;
+  }
+
+  .site-list__item--nav {
+    width: 167px;
+    font-size: 15px;
+  }
+
+  .site-list__item-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list--nav {
+    position: relative;
+    top: 0;
+    order: -1;
+    width: 425px;
+    font-size: 17px;
+  }
+
+  .site-list--user {
+    order: 1;
+  }
+
+  .site-list__item--nav {
+    width: 190px;
+    font-size: 17px;
+  }
+
+  .site-list__item {
+    &--new,
+    &--sale {
+      position: absolute;
+      top: 65px;
+      left: 0;
+      display: block;
+      font-size: 15px;
+    }
+  }
+
+  .site-list__item--sale {
+    left: 220px;
   }
 }

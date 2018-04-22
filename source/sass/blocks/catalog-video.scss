@@ -1,16 +1,56 @@
 .catalog-video {
+  padding: 30px 30px 58px;
   font-size: 13px;
   line-height: 24px;
 }
 
 .catalog-video__title {
   margin: 0;
+  padding-left: 90px;
   font-size: 17px;
   font-weight: 700;
   color: #000000;
 }
 
 .catalog-video__btn {
+  display: block;
   font-size: 17px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-video {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .catalog-video__title {
+    font-size: 20px;
+  }
+
+  .catalog-video__video {
+    width: 100%;
+    order: -1;
+  }
+
+  .catalog-video__btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-video__title {
+    padding-left: 0;
+  }
+
+  .catalog-video__video {
+    width: 680px;
+  }
+
+  .catalog-video__text {
+    width: 350px;
+  }
 }

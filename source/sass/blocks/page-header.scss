@@ -1,3 +1,21 @@
-.page-header {
+.page-header__wrapper {
   position: relative;
+}
+
+.page-header__delivery {
+  display: none;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .page-header__delivery {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    display: inline-block;
+  }
 }

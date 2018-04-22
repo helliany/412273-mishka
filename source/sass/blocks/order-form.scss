@@ -4,10 +4,19 @@
   border: none;
 }
 
+.order-form__fieldset {
+  &--color,
+  &--phone,
+  &--mail {
+  background-color: #f1f1f1;
+  }
+}
+
 .order-form__title {
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #63d1bb;
 }
 
@@ -27,4 +36,64 @@
 .order-form__text {
   font-size: 14px;
   line-height: 16px;
+}
+
+.order-form__btn {
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .order-form__title {
+    width: 168px;
+  }
+
+  .order-form__list {
+    width: 500px;
+  }
+
+  .order-form__list--color {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .order-form__item--color {
+    width: 250px;
+  }
+
+   .order-form__input {
+     &--tel,
+     &--mail,
+     &--message {
+       width: 500px;
+     }
+   }
+
+   .order-form__label {
+     font-size: 19px;
+   }
+
+   .order-form__text {
+     order: 1;
+     font-size: 17px;
+     line-height: 30px;
+   }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__title {
+    width: 175px;
+  }
+
+  .order-form__list {
+    width: 875px;
+  }
+
+  .order-form__item--color {
+    width: 265px;
+  }
 }
