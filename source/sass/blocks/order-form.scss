@@ -60,23 +60,23 @@
     width: 250px;
   }
 
-   .order-form__input {
-     &--tel,
-     &--mail,
-     &--message {
-       width: 500px;
-     }
+  .order-form__input {
+   &--tel,
+   &--mail,
+   &--message {
+     width: 500px;
    }
+  }
 
-   .order-form__label {
-     font-size: 19px;
-   }
+  .order-form__label {
+    font-size: 19px;
+  }
 
-   .order-form__text {
-     order: 1;
-     font-size: 17px;
-     line-height: 30px;
-   }
+  .order-form__text {
+   order: 1;
+   font-size: 17px;
+   line-height: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
