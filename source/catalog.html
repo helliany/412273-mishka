@@ -7,45 +7,43 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <div class="page-header__wrapper">
-          <nav class="main-nav">
-            <p class="main-nav__logo">
-              <a class="main-nav__logo-link" href="index.html">
-                <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86"
-                height="35" alt="Mishka">
+      <div class="container page-header__wrapper">
+        <nav class="main-nav">
+          <p class="main-nav__logo">
+            <a class="main-nav__logo-link" href="index.html">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86"
+              height="35" alt="Mishka">
+            </a>
+          </p>
+          <button class="main-nav__btn" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list site-list--nav">
+            <li class="site-list__item site-list__item--nav site-list__item--active">
+              <a class="site-list__item-link">Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item--nav">
+              <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--new">
+              <a class="site-list__item-link" href="form.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--sale">
+              <a class="site-list__item-link" href="form.html">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list site-list site-list--user">
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__item-link" href="#">
+                <span class="site-list__item-hidden">Поиск по сайту</span>
               </a>
-            </p>
-            <button class="main-nav__btn" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <ul class="main-nav__list site-list site-list--nav">
-              <li class="site-list__item site-list__item--nav site-list__item--active">
-                <a class="site-list__item-link">Каталог товаров</a>
-              </li>
-              <li class="site-list__item site-list__item--nav">
-                <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
-              </li>
-              <li class="site-list__item site-list__item--new">
-                <a class="site-list__item-link" href="form.html">Новые поступления</a>
-              </li>
-              <li class="site-list__item site-list__item--sale">
-                <a class="site-list__item-link" href="form.html">Распродажа</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list site-list site-list--user">
-              <li class="site-list__item site-list__item--search">
-                <a class="site-list__item-link" href="#">
-                  <span class="site-list__item-hidden">Поиск по сайту</span>
-                </a>
-              </li>
-              <li class="site-list__item site-list__item--cart">
-                <a class="site-list__item-link" href="#">Корзина: пока пуста</a>
-              </li>
-            </ul>
-          </nav>
-          <p class="page-header__delivery">Бесплатная доставка по России</p>
-        </div>
+            </li>
+            <li class="site-list__item site-list__item--cart">
+              <a class="site-list__item-link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="page-header__delivery">Бесплатная доставка по России</p>
       </div>
     </header>
 
@@ -121,38 +119,36 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
-        <div class="page-footer__wrapper">
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">
-                  <span class="visually-hidden">Инстаграм</span>
-                  <img src="img/icon-insta.svg" width="22" height="21">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--fb" href="#">
-                  <span class="visually-hidden">Фэйсбук</span>
-                  <img src="img/icon-fb.svg" width="15" height="28">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">
-                  <span class="visually-hidden">Твиттер</span>
-                  <img src="img/icon-twitter.svg" width="23" height="20">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <span class="copyright__text">Разработано</span>
-            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="visually-hidden">HTML Academy</span>
-              <img class="copyright__logo-image" src="img/logo-htmlacademy.svg" width="27"
-              height="34" alt="HTML Academy">
-            </a>
-          </div>
+      <div class="container page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <img src="img/icon-insta.svg" width="22" height="21" alt="Инстаграм">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                <span class="visually-hidden">Фэйсбук</span>
+                <img src="img/icon-fb.svg" width="15" height="28" alt="Фэйсбук">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Твиттер</span>
+                <img src="img/icon-twitter.svg" width="23" height="20" alt="Твиттер">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img class="copyright__logo-image" src="img/logo-htmlacademy.svg" width="27"
+            height="34" alt="HTML Academy">
+          </a>
         </div>
       </div>
     </footer>
