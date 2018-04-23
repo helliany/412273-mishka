@@ -123,7 +123,7 @@
   .offers__title {
     width: 600px;
     margin: 0 auto;
-    padding: 100px 0px 370px;
+    padding: 100px 0 370px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -183,7 +183,7 @@
 @media (min-width: $desktop-width) {
   .offers__title {
     width: 700px;
-    padding: 155px 0px 350px;
+    padding: 155px 0 350px;
     font-size: 53px;
     line-height: 57px;
   }

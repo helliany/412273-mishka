@@ -20,11 +20,6 @@
   list-style: none;
 }
 
-.features__item {
-  padding-top: 55px;
-  padding-bottom: 30px;
-}
-
 .features__item::before {
   content: "";
   position: absolute;
@@ -34,6 +29,8 @@
 
 .features__item {
   position: relative;
+  padding-top: 55px;
+  padding-bottom: 30px;
 
   &--eco::before {
     width: 32px;
@@ -72,7 +69,7 @@
   }
 }
 
-@media (min-width: $tablet-width)  {
+@media (min-width: $tablet-width) {
   .features__title {
     padding: 0 0 45px;
     font-size: 43px;
