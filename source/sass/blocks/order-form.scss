@@ -61,11 +61,11 @@
   }
 
   .order-form__input {
-   &--tel,
-   &--mail,
-   &--message {
-     width: 500px;
-   }
+    &--tel,
+    &--mail,
+    &--message {
+      width: 500px;
+    }
   }
 
   .order-form__label {
@@ -73,9 +73,9 @@
   }
 
   .order-form__text {
-   order: 1;
-   font-size: 17px;
-   line-height: 30px;
+    order: 1;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
