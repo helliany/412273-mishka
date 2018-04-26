@@ -3,16 +3,19 @@
 }
 
 .offers__wrapper {
+  background-color: #f9f9f9;
   background-image: url("../../img/hero-mobile@1x.jpg");
-  background-color: #fafafa;
   background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .offers__title {
   margin: 0;
+  padding: 75px 20px 120px;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+  text-align: center;
   color: #010000;
 }
 
@@ -29,6 +32,8 @@
 }
 
 .offers__item-link {
+  display: block;
+  padding: 28px 160px 28px 30px;
   color: #ffffff;
   outline: none;
 }
@@ -61,8 +66,14 @@
   background-color: #46c1ae;
 }
 
+.offers__product {
+  position: relative;
+  padding: 30px 30px 42px;
+}
+
 .offers__product-title {
   margin: 0;
+  padding-bottom: 5px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -70,6 +81,8 @@
 }
 
 .offers__product-of-week {
+  margin: 0;
+  padding-bottom: 28px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -77,15 +90,140 @@
   color: #63d1bb;
 }
 
+.offers__product-description {
+  margin: 0;
+  padding-bottom: 28px;
+}
+
 .offers__product-table {
   line-height: 20px;
+  padding-bottom: 28px;
+}
+
+.offers__product-image {
+  margin: 0;
+  padding-bottom: 28px;
+  line-height: 0;
 }
 
 .offers__product-cost {
+  margin: 0;
+  padding-bottom: 28px;
   font-size: 17px;
   font-weight: 700;
+  text-align: center;
 }
 
 .offers__product-btn {
+  display: block;
   font-size: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .offers__title {
+    width: 600px;
+    margin: 0 auto;
+    padding: 100px 0 370px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .offers__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .offers__item {
+    width: 334px;
+  }
+
+  .offers__item-link {
+    padding: 33px 167px 33px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .offers__product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 52px 0;
+  }
+
+  .offers__product-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .offers__product-of-week {
+    line-height: 17px;
+  }
+
+  .offers__product-wrapper {
+    width: 334px;
+  }
+
+  .offers__product-description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .offers__product-buy {
+    width: 334px;
+  }
+
+  .offers__product-cost {
+    font-size: 20px;
+  }
+
+  .offers__product-btn {
+    width: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers__title {
+    width: 700px;
+    padding: 155px 0 350px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .offers__item {
+    width: 525px;
+  }
+
+  .offers__item-link {
+    padding-right: 350px;
+  }
+
+  .offers__product {
+    padding: 70px 0;
+  }
+
+  .offers__product-title-wrapper {
+    position: absolute;
+  }
+
+  .offers__product-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .offers__product-of-week {
+    order: -1;
+  }
+
+  .offers__product-wrapper {
+    width: 525px;
+    padding: 155px 65px 115px 175px;
+  }
+
+  .offers__product-image {
+    width: 525px;
+  }
+
+  .offers__product-buy {
+    width: 525px;
+    padding-left: 175px;
+  }
 }

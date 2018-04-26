@@ -1,3 +1,26 @@
-.page-header {
+.page-header__wrapper {
   position: relative;
+}
+
+.page-header__delivery {
+  display: none;
+  margin: 0;
+  padding: 22px 0;
+  line-height: 24px;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .page-header__delivery {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    display: block;
+    order: 1;
+    width: 334px;
+  }
 }

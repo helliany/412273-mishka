@@ -6,6 +6,10 @@
   font-weight: 700;
   color: #000000;
   list-style: none;
+
+  &--new {
+    display: none;
+  }
 }
 
 .site-list__item {
@@ -13,6 +17,8 @@
 }
 
 .site-list__item-link {
+  display: block;
+  padding: 27px 0 27px 75px;
   color: #000000;
   outline: none;
 
@@ -23,5 +29,77 @@
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    border: none;
+
+    &--search {
+      width: 85px;
+    }
+
+    &--cart {
+      width: 265px;
+      text-align: right;
+    }
+  }
+
+  .site-list__item-link {
+    padding-left: 0;
+  }
+
+  .site-list--nav {
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+  }
+
+  .site-list__item--nav {
+    width: 167px;
+    font-size: 15px;
+  }
+
+  .site-list__item-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    &--nav {
+      position: static;
+      order: -1;
+      width: 425px;
+      font-size: 17px;
+    }
+
+    &--user {
+      order: 1;
+      width: 350px;
+    }
+
+    &--new {
+      position: absolute;
+      bottom: -55px;
+      left: 0;
+      display: flex;
+    }
+  }
+
+  .site-list__item {
+    &--new {
+      width: 190px;
+      font-size: 15px;
+    }
+
+    &--nav {
+      width: 190px;
+      font-size: 17px;
+    }
   }
 }
