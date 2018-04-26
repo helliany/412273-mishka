@@ -4,7 +4,10 @@
 
 .page-header__delivery {
   display: none;
+  margin: 0;
+  padding: 22px 0;
   line-height: 24px;
+  text-align: right;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,8 +17,10 @@
 
   .page-header__delivery {
     position: absolute;
-    top: 75px;
+    bottom: -50px;
     right: 0;
-    display: inline-block;
+    display: block;
+    order: 1;
+    width: 334px;
   }
 }

@@ -19,3 +19,10 @@
   align-self: center;
   line-height: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+    border-bottom: none;
+  }
+}

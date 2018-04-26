@@ -7,7 +7,7 @@
 }
 
 .copyright__text {
-  padding-right: 30px;
+  padding-right: 25px;
   vertical-align: middle;
 }
 
@@ -16,4 +16,11 @@
   margin-left: -4px;
   vertical-align: top;
   line-height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 185px;
+    padding: 0;
+  }
 }

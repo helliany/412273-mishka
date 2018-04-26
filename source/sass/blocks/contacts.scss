@@ -16,15 +16,16 @@
   color: #000000;
 }
 
+.contacts__row {
+  padding-bottom: 36px;
+}
+
 .contacts__item {
-  padding-right: 28px;
+  padding-right: 20px;
   text-transform: lowercase;
 }
 
 .contacts__link {
-  display: inline-block;
-  padding-bottom: 36px;
-  vertical-align: top;
   color: #444444;
   outline: none;
 
@@ -39,10 +40,8 @@
 }
 
 .contacts__value {
-  display: inline-block;
   width: 180px;
   margin: 0;
-  vertical-align: top;
 }
 
 .contacts__map {
@@ -66,7 +65,7 @@
   }
 
   .contacts__wrapper {
-    padding: 0 50px 55px;
+    padding: 0 50px;
   }
 
   .contacts__title {
@@ -78,6 +77,16 @@
     display: flex;
     flex-wrap: wrap;
     font-size: 17px;
+  }
+
+  .contacts__table tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__row {
+    width: 334px;
+    padding-bottom: 60px;
   }
 
   .contacts__btn {
@@ -97,6 +106,10 @@
   .contacts__wrapper {
     width: 525px;
     padding: 50px 40px 100px 175px;
+  }
+
+  .contacts__row {
+    width: 350px;
   }
 
   .contacts__map {

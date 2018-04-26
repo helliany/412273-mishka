@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -25,12 +26,6 @@
             <li class="site-list__item site-list__item--nav">
               <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="site-list__item site-list__item--new">
-              <a class="site-list__item-link" href="form.html">Новые поступления</a>
-            </li>
-            <li class="site-list__item site-list__item--sale">
-              <a class="site-list__item-link" href="form.html">Распродажа</a>
-            </li>
           </ul>
           <ul class="main-nav__list site-list site-list--user">
             <li class="site-list__item site-list__item--search">
@@ -42,8 +37,16 @@
               <a class="site-list__item-link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
+          <ul class="main-nav__list site-list site-list--new">
+            <li class="site-list__item site-list__item--new">
+              <a class="site-list__item-link" href="form.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--new">
+              <a class="site-list__item-link" href="form.html">Распродажа</a>
+            </li>
+          </ul>
+          <p class="page-header__delivery">Бесплатная доставка по России</p>
         </nav>
-        <p class="page-header__delivery">Бесплатная доставка по России</p>
       </div>
     </header>
 
@@ -147,14 +150,20 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__table">
-            <span class="contacts__item">E-mail:</span>
-            <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
-            <span class="contacts__item">Адрес:</span>
-            <p class="contacts__value">
-              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-            </p>
-          </div>
+          <table class="contacts__table">
+            <tr class="contacts__row">
+              <td class="contacts__item">E-mail:</td>
+              <td class="contacts__value">
+                <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
+              </td>
+            </tr>
+            <tr class="contacts__row">
+              <td class="contacts__item">Адрес:</td>
+              <td class="contacts__value">
+                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+              </td>
+            </tr>
+          </table>
         </div>
         <p class="contacts__map">
           <img class="contacts__map-image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г. Санкт-Петербург,
@@ -166,6 +175,12 @@
 
     <footer class="page-footer">
       <div class="container page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="main-nav__logo-link">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86"
+            height="35" alt="Mishka">
+          </a>
+        </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

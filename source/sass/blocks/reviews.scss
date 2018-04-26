@@ -43,6 +43,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    width: 768px;
+    margin: 0 auto;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
   .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +88,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    width: 1050px;
+  }
+
   .reviews__wrapper {
     padding: 80px 0 100px 175px;
   }

@@ -3,6 +3,11 @@
   line-height: 24px;
 }
 
+.order__text {
+  margin: 0;
+  padding: 28px 30px;
+}
+
 @media (min-width: $tablet-width) {
   .order__text {
     font-size: 17px;
