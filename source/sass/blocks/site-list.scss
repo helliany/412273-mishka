@@ -71,7 +71,6 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-
     &--nav {
       position: static;
       order: -1;
@@ -93,7 +92,6 @@
   }
 
   .site-list__item {
-
     &--new {
       width: 190px;
       font-size: 15px;
