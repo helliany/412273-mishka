@@ -6,12 +6,12 @@
   background-color: #f9f9f9;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 50% -15%;
 }
 
 .offers__title {
   margin: 0;
-  padding: 75px 20px 120px;
+  padding: 70px 50px 125px;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
@@ -33,7 +33,7 @@
 
 .offers__item-link {
   display: block;
-  padding: 28px 160px 28px 30px;
+  padding: 26px 160px 30px 30px;
   color: #ffffff;
   outline: none;
 }
@@ -68,7 +68,7 @@
 
 .offers__product {
   position: relative;
-  padding: 30px 30px 42px;
+  padding: 26px 30px 42px;
 }
 
 .offers__product-title {
@@ -82,7 +82,7 @@
 
 .offers__product-of-week {
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -92,23 +92,39 @@
 
 .offers__product-description {
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 18px;
 }
 
 .offers__product-table {
+  width: 100%;
   line-height: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
+}
+
+.offers__field,
+.offers__value {
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.offers__value {
+  padding-left: 15px;
 }
 
 .offers__product-image {
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 24px;
   line-height: 0;
+}
+
+.offers__image {
+  width: 260px;
+  height: 315px;
 }
 
 .offers__product-cost {
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
   font-size: 17px;
   font-weight: 700;
   text-align: center;
@@ -116,14 +132,19 @@
 
 .offers__product-btn {
   display: block;
+  width: 100%;
   font-size: 17px;
 }
 
 @media (min-width: $tablet-width) {
+  .offers__wrapper {
+    background-image: url("../../img/hero-tablet@1x.jpg");
+  }
+
   .offers__title {
     width: 600px;
     margin: 0 auto;
-    padding: 100px 0 370px;
+    padding: 154px 0 373px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -138,15 +159,25 @@
   }
 
   .offers__item-link {
-    padding: 33px 167px 33px 36px;
+    padding: 29px 167px 29px 36px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .offers__product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 48px 0;
+  }
+
+  .offers__product-title-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 52px 0;
+    justify-content: space-between;
+    width: 668px;
+    padding-bottom: 45px;
   }
 
   .offers__product-title {
@@ -155,35 +186,61 @@
   }
 
   .offers__product-of-week {
+    width: 125px;
+    margin: auto 0;
+    padding: 0;
     line-height: 17px;
+    text-align: center;
   }
 
   .offers__product-wrapper {
     width: 334px;
+    padding: 0 40px 30px 0;
   }
 
   .offers__product-description {
+    padding-bottom: 36px;
     font-size: 17px;
     line-height: 30px;
   }
 
+  .offers__value {
+    padding-left: 0;
+  }
+
+  .offers__product-image {
+    position: absolute;
+    z-index: -1;
+    top: 155px;
+    right: 0;
+    padding: 0;
+  }
+
+  .offers__image {
+    width: 333px;
+    height: 404px;
+  }
+
   .offers__product-buy {
     width: 334px;
+    padding-right: 44px;
   }
 
   .offers__product-cost {
     font-size: 20px;
-  }
-
-  .offers__product-btn {
-    width: 290px;
+    padding-bottom: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .offers__wrapper {
+    background-image: url("../../img/hero-desktop@1x.jpg");
+    margin-bottom: 55px;
+  }
+
   .offers__title {
     width: 700px;
-    padding: 155px 0 350px;
+    padding: 153px 0 359px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -197,11 +254,12 @@
   }
 
   .offers__product {
-    padding: 70px 0;
+    padding: 70px 0 96px;
   }
 
   .offers__product-title-wrapper {
-    position: absolute;
+    width: 698px;
+    padding-left: 20px;
   }
 
   .offers__product-title {
@@ -214,16 +272,27 @@
   }
 
   .offers__product-wrapper {
-    width: 525px;
-    padding: 155px 65px 115px 175px;
+    width: 350px;
+    margin-left: 175px;
+    padding: 0 50px 82px 0;
+  }
+
+  .offers__product-description {
+    padding-bottom: 50px;
   }
 
   .offers__product-image {
+    top: 20px;
+  }
+
+  .offers__image {
     width: 525px;
+    height: 636px;
   }
 
   .offers__product-buy {
-    width: 525px;
-    padding-left: 175px;
+    width: 350px;
+    margin-left: 175px;
+    padding-right: 58px;
   }
 }

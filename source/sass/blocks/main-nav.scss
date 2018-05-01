@@ -33,8 +33,14 @@
 
   .main-nav__logo {
     width: 320px;
+    padding: 21px 0;
     text-align: left;
-    border: none;
+    border-bottom: none;
+  }
+
+  .main-nav__logo-image {
+    width: 113px;
+    height: 46px;
   }
 
   .main-nav__btn {
@@ -49,6 +55,12 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__logo {
-    width: 200px;
+    width: 330px;
+    padding: 8px 80px;
+  }
+
+  .main-nav__logo-image {
+    width: 149px;
+    height: 72px;
   }
 }

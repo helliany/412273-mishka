@@ -5,12 +5,19 @@
 
 .order__text {
   margin: 0;
-  padding: 28px 30px;
+  padding: 24px 30px;
 }
 
 @media (min-width: $tablet-width) {
   .order__text {
+    padding: 0 0 8px;
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__text {
+    padding: 0 175px 8px;
   }
 }
