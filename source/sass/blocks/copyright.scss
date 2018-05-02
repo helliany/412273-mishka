@@ -7,14 +7,22 @@
 }
 
 .copyright__text {
+  align-self: center;
   padding-right: 26px;
+  color: #000000;
 }
 
 .copyright__logo {
-  display: inline-block;
-  margin-left: -4px;
-  vertical-align: middle;
-  line-height: 0;
+  display: flex;
+
+  &:hover path,
+  &:focus path{
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -4,9 +4,14 @@
 
 .offers__wrapper {
   background-color: #f9f9f9;
-  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -15%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 1150px auto;
+  }
 }
 
 .offers__title {
@@ -25,6 +30,16 @@
   list-style: none;
 }
 
+.offers__item {
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+}
+
 .offers__item-title {
   margin: 0;
   font-size: 19px;
@@ -32,38 +47,63 @@
 }
 
 .offers__item-link {
+  position: relative;
   display: block;
   padding: 26px 160px 30px 30px;
   color: #ffffff;
   outline: none;
+
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+    padding-bottom: 35px;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill-opacity: 0.7;
+  }
+
+  &:active path {
+    fill-opacity: 0.3;
+  }
+
+  &--interior {
+    &:hover,
+    &:focus {
+      background-color: #59d5bc;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #59d5bc;
+    }
+  }
+
+  &--toys {
+    &:hover,
+    &:focus {
+      background-color: #46c1ae;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #46c1ae;
+    }
+  }
 }
 
-.offers__item--interior {
-  background-color: #63d1bb;
-}
+.offers__item-icon {
+  position: absolute;
+  top: 22px;
 
-.offers__item--toys {
-  background-color: #56c3b2;
-}
+  &--interior {
+    right: 36px;
+  }
 
-.offers__item-link--interior:hover,
-.offers__item-link--interior:focus {
-  background-color: #59d5bc;
-}
-
-.offers__item-link--interior:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #59d5bc;
-}
-
-.offers__item-link--toys:hover,
-.offers__item-link--toys:focus {
-  background-color: #46c1ae;
-}
-
-.offers__item-link--toys:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #46c1ae;
+  &--toys {
+    right: 27px;
+  }
 }
 
 .offers__product {
@@ -138,7 +178,11 @@
 
 @media (min-width: $tablet-width) {
   .offers__wrapper {
-    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 
   .offers__title {
@@ -234,8 +278,12 @@
 
 @media (min-width: $desktop-width) {
   .offers__wrapper {
-    background-image: url("../../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg");
     margin-bottom: 55px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   .offers__title {

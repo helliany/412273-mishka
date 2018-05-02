@@ -55,6 +55,15 @@
   outline: none;
   border: 1px solid #ececec;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill-opacity: 0.6;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
 }
 
 .reviews__toggle--next {
@@ -71,11 +80,11 @@
     width: 768px;
     margin: 0 auto;
     padding: 80px 0 85px;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
     }
   }
@@ -108,11 +117,12 @@
   .reviews__toggles {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 8px;
   }
 
   .reviews__toggle {
     width: 88px;
+    border: none;
   }
 
   .reviews__btn {
@@ -140,6 +150,10 @@
 
   .reviews__text {
     padding-bottom: 38px;
+  }
+
+  .reviews__toggles {
+    bottom: 62px;
   }
 
   .reviews__btn {

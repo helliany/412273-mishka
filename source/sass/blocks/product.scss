@@ -1,5 +1,15 @@
 .product {
+  position: relative;
   margin-bottom: 30px;
+
+  &:hover .product__wrapper,
+  &:focus .product__wrapper {
+    box-shadow: 0 2px 5px 2px #ececec;
+  }
+
+  &:active .product__wrapper {
+    box-shadow: 0 0 3px 2px #ececec;
+  }
 }
 
 .product__wrapper {
@@ -54,6 +64,23 @@
   border-top: 1px solid #ececec;
 }
 
+.product__btn {
+  position: absolute;
+  right: 28px;
+  bottom: 23px;
+
+  &:hover path,
+  &:focus path {
+    fill-opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active path {
+    fill-opacity: 0.3;
+    fill: #63d1bb;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .product {
     display: flex;
@@ -85,6 +112,10 @@
   .product__price {
     padding: 22px 5px 0;
     font-size: 17px;
+  }
+
+  .product__btn {
+    right: 32px;
   }
 }
 

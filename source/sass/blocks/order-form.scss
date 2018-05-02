@@ -89,6 +89,13 @@
 
   &--contact {
     padding-bottom: 30px;
+
+    &:hover path,
+    &:focus path,
+    &:active path {
+      fill: #62d1ba;
+      fill-opacity: 1;
+    }
   }
 
   &--radio::before {
@@ -110,6 +117,15 @@
     height: 39px;
     width: 40px;
     border: 2px solid #444444;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #62d1ba;
+  }
+
+  &:active::before {
+    border-color: rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -154,7 +170,7 @@
 .order-form__input--radio:checked + .order-form__label::after {
   content: "";
   position: absolute;
-  left: -52px;
+  left: -51px;
   top: 3px;
   width: 16px;
   height: 16px;
@@ -169,9 +185,15 @@
   top: 3px;
   width: 33px;
   height: 23px;
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 70%;
+}
+
+.order-form__input-icon {
+  position: absolute;
+  right: 6px;
+  top: 5px;
 }
 
 .order-form__text {
@@ -321,6 +343,11 @@
     }
   }
 
+  .order-form__input-icon {
+    right: 24px;
+    top: 0;
+  }
+
   .order-form__text {
     order: 1;
     width: 334px;
@@ -401,6 +428,10 @@
     &--message {
       width: 700px;
     }
+  }
+
+  .order-form__input-icon {
+    right: 5px;
   }
 
   .order-form__text {
