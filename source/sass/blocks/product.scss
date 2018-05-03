@@ -4,11 +4,11 @@
 
   &:hover .product__wrapper,
   &:focus .product__wrapper {
-    box-shadow: 0 2px 5px 2px #ececec;
+    box-shadow: 0 2px 6px 4px #ececec;
   }
 
   &:active .product__wrapper {
-    box-shadow: 0 0 3px 2px #ececec;
+    box-shadow: 0 2px 3px 2px #ececec;
   }
 }
 
