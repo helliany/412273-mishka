@@ -5,7 +5,7 @@
 .page-main__title {
   width: 320px;
   margin: 0 auto;
-  padding: 73px 30px;
+  padding: 72px 30px 76px;
   font-size: 27px;
   font-weight: 700;
   text-align: center;
@@ -13,16 +13,48 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__title-wrapper {
+    position: relative;
+    margin-bottom: 75px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      margin-left: -384px;
+      width: 768px;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: 768px auto;
+    }
+  }
+
   .page-main__title {
     width: 500px;
+    padding: 95px 30px 78px;
     font-size: 43px;
     line-height: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__title-wrapper {
+    margin-bottom: 125px;
+
+    &::after {
+      bottom: -20px;
+      margin-left: -575px;
+      width: 1150px;
+      height: 34px;
+      background-size: 1150px auto;
+    }
+  }
+
   .page-main__title {
     width: 700px;
+    padding: 94px 30px 100px;
     font-size: 53px;
     line-height: 57px;
   }

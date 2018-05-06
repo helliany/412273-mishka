@@ -17,7 +17,8 @@
 
   .page-header__delivery {
     position: absolute;
-    bottom: -50px;
+    z-index: 1;
+    bottom: -65px;
     right: 0;
     display: block;
     order: 1;
