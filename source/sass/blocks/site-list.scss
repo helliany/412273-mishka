@@ -52,6 +52,7 @@
 @media (min-width: $tablet-width) {
   .site-list--nav {
     position: absolute;
+    z-index: 1;
     bottom: -73px;
     left: 0;
     display: flex;
@@ -107,6 +108,7 @@
 
     &--new {
       position: absolute;
+      z-index: 1;
       bottom: -72px;
       left: 0;
       display: flex;

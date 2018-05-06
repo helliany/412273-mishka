@@ -14,7 +14,21 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title-wrapper {
+    position: relative;
     margin-bottom: 75px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      margin-left: -384px;
+      width: 768px;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: 768px auto;
+    }
   }
 
   .page-main__title {
@@ -28,6 +42,14 @@
 @media (min-width: $desktop-width) {
   .page-main__title-wrapper {
     margin-bottom: 125px;
+
+    &::after {
+      bottom: -20px;
+      margin-left: -575px;
+      width: 1150px;
+      height: 34px;
+      background-size: 1150px auto;
+    }
   }
 
   .page-main__title {

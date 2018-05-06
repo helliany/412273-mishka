@@ -72,14 +72,14 @@
 
 .reviews__btn {
   display: block;
-  margin-bottom: 48px;
+  margin-bottom: 44px;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
     width: 768px;
     margin: 0 auto;
-    padding: 80px 0 85px;
+    padding: 80px 0 70px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
 
@@ -135,7 +135,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     width: 1050px;
-    padding: 68px 0 85px;
+    padding: 68px 0 65px;
   }
 
   .reviews__wrapper {

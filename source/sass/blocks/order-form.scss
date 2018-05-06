@@ -89,13 +89,6 @@
 
   &--contact {
     padding-bottom: 30px;
-
-    &:hover path,
-    &:focus path,
-    &:active path {
-      fill: #62d1ba;
-      fill-opacity: 1;
-    }
   }
 
   &--radio::before {
@@ -190,6 +183,15 @@
   background-size: 70%;
 }
 
+.order-form__input--contact {
+  &:hover + .order-form__input-icon path,
+  &:focus + .order-form__input-icon path,
+  &:active + .order-form__input-icon path {
+    fill: #62d1ba;
+    fill-opacity: 1;
+  }
+}
+
 .order-form__input-icon {
   position: absolute;
   right: 6px;
@@ -206,6 +208,7 @@
 .order-form__btn {
   width: 100%;
   margin-bottom: 55px;
+  font-size: 17px;
   background-color: #ffffff;
 }
 
@@ -224,7 +227,7 @@
     }
 
     &--message {
-      padding: 50px 0 8px;
+      padding: 48px 0 8px;
     }
 
     &--send {

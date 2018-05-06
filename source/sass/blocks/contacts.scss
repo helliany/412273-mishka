@@ -1,11 +1,15 @@
 .contacts {
   width: 320px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 42px 0 40px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 320px auto;
 }
 
 .contacts__wrapper {
-  padding: 0 30px 8px;
+  padding: 0 30px 9px;
 }
 
 .contacts__title {
@@ -37,7 +41,9 @@
 }
 
 .contacts__link {
+  padding-bottom: 5px;
   color: #444444;
+  border-bottom: 1px solid #62d1ba;
   outline: none;
 
   &:hover,
@@ -69,7 +75,8 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: 768px;
-    padding: 62px 0 57px;
+    padding: 77px 0 57px;
+    background-size: 768px auto;
   }
 
   .contacts__wrapper {
@@ -118,7 +125,7 @@
     width: 256px;
 
     &--address {
-      padding-right: 45px;
+      padding-right: 20px;
     }
   }
 
@@ -139,12 +146,13 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 1050px;
-    padding: 71px 0 105px;
+    padding: 92px 0 105px;
+    background-size: 1050px auto;
   }
 
   .contacts__wrapper {
     width: 525px;
-    padding: 70px 40px 50px 175px;
+    padding: 70px 40px 48px 175px;
   }
 
   .contacts__title {
