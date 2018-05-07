@@ -51,7 +51,7 @@
 
 .product__description {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   font-size: 13px;
 }
 
@@ -99,7 +99,7 @@
   }
 
   .product__title {
-    padding-bottom: 8px;
+    padding: 0 38px 6px 0;
     font-size: 20px;
   }
 
@@ -129,6 +129,10 @@
   .product__link-img {
     width: 316px;
     height: 462px;
+  }
+
+  .product__title {
+    padding-right: 20px;
   }
 
   .product__wrapper {
