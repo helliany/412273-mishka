@@ -16,7 +16,7 @@
 
 .offers__title {
   margin: 0;
-  padding: 70px 30px 125px;
+  padding: 70px 30px 122px;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
@@ -49,7 +49,7 @@
 .offers__item-link {
   position: relative;
   display: block;
-  padding: 26px 160px 30px 30px;
+  padding: 25px 160px 30px 30px;
   color: #ffffff;
   outline: none;
 
@@ -128,7 +128,7 @@
 
 .offers__product-of-week {
   margin: 0;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -138,13 +138,14 @@
 
 .offers__product-description {
   margin: 0;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 }
 
 .offers__product-table {
   width: 100%;
   line-height: 20px;
-  padding-bottom: 26px;
+  margin-bottom: 26px;
+  border-collapse: collapse;
 }
 
 .offers__field,
@@ -154,12 +155,12 @@
 }
 
 .offers__value {
-  padding-left: 15px;
+  padding-left: 16px;
 }
 
 .offers__product-image {
   display: block;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
   line-height: 0;
 }
 
@@ -209,7 +210,7 @@
   .offers__title {
     width: 600px;
     margin: 0 auto;
-    padding: 154px 0 373px;
+    padding: 152px 0 372px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -233,6 +234,7 @@
     top: 30px;
 
     &--toys {
+      top: 32px;
       right: 34px;
     }
   }
@@ -252,7 +254,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 668px;
-    padding-bottom: 45px;
+    padding-bottom: 44px;
   }
 
   .offers__product-title {
@@ -274,7 +276,7 @@
   }
 
   .offers__product-description {
-    padding-bottom: 36px;
+    padding-bottom: 34px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -303,7 +305,7 @@
 
   .offers__product-cost {
     font-size: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 34px;
   }
 }
 
@@ -327,7 +329,7 @@
 
   .offers__title {
     width: 700px;
-    padding: 153px 0 359px;
+    padding: 154px 0 358px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -367,7 +369,7 @@
   }
 
   .offers__product-description {
-    padding-bottom: 50px;
+    padding-bottom: 48px;
   }
 
   .offers__product-image {

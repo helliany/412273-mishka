@@ -1,5 +1,5 @@
 .copyright {
-  padding: 22px 69px;
+  padding: 20px 68px 24px;
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
@@ -8,7 +8,7 @@
 
 .copyright__text {
   align-self: center;
-  padding-right: 26px;
+  padding-right: 28px;
   color: #000000;
 }
 
@@ -28,10 +28,10 @@
 @media (min-width: $tablet-width) {
   .copyright {
     width: 185px;
-    padding: 8px 0;
+    padding: 6px 0;
   }
 
   .copyright__text {
-    padding-right: 28px;
+    padding-right: 30px;
   }
 }
