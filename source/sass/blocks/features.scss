@@ -80,7 +80,7 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    padding: 50px 0 28px 0;
+    padding: 50px 0 30px 0;
   }
 
   .features__title {
@@ -97,7 +97,7 @@
 
   .features__item {
     width: 334px;
-    padding: 57px 40px 55px 0;
+    padding: 57px 40px 54px 0;
     font-size: 20px;
     line-height: 22px;
 
@@ -109,6 +109,30 @@
     &--like,
     &--gift {
       order: 2;
+    }
+
+    &--eco::before {
+      top: 2px;
+    }
+
+    &--price::before {
+      top: 4px;
+    }
+
+    &--like::before {
+      top: 9px;
+    }
+
+    &--handmade::before {
+      top: 6px;
+    }
+
+    &--home::before {
+      top: 8px;
+    }
+
+    &--gift::before {
+      top: 5px;
     }
   }
 }

@@ -15,14 +15,18 @@
 .copyright__logo {
   display: flex;
 
-  &:hover path,
-  &:focus path {
+  &:hover .copyright__logo-path,
+  &:focus .copyright__logo-path {
     fill: #46c1ae;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.copyright__logo-path {
+  fill: #63d1bb;
 }
 
 @media (min-width: $tablet-width) {

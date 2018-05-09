@@ -20,13 +20,17 @@
   line-height: 0;
 }
 
+.social__link-path {
+  fill: #231f20;
+}
+
 .social__link {
-  &:hover path,
-  &:focus path {
+  &:hover .social__link-path,
+  &:focus .social__link-path {
     fill: #46c1ae;
   }
 
-  &:active path {
+  &:active .social__link-path {
     fill-opacity: 0.3;
   }
 }
