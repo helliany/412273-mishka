@@ -183,6 +183,11 @@
   background-size: 70%;
 }
 
+.order-form__input--radio:disabled + .order-form__label::before,
+.order-form__input--checkbox:disabled + .order-form__label::before {
+  opacity: 0.3;
+}
+
 .order-form__input--contact {
   &:hover + .order-form__input-icon .order-form__icon-path,
   &:focus + .order-form__input-icon .order-form__icon-path,

@@ -57,12 +57,22 @@
 }
 
 .contacts__map {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.contacts__map-inner {
+  position: relative;
+  z-index: 1;
   height: 457px;
-  margin: 0 0 40px;
-  line-height: 0;
+  margin: 0;
 }
 
 .contacts__map-image {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   line-height: 0;
 }
@@ -96,7 +106,7 @@
       right: 5px;
       width: 46px;
       height: 81px;
-      background-image: url("../img/icon-flag.svg");
+      background-image: url("../img/flag.svg");
     }
   }
 
