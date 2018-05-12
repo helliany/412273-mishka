@@ -41,7 +41,7 @@ if (btn_product != null) {
 }
 
 function initMap() {
-  var contact_map = document.querySelector(".contacts__map");
+  var contact_map = document.querySelector(".contacts__map-inner");
   var image = "img/icon-map-pin.svg";
   if (contact_map != null) {
     var options = {
