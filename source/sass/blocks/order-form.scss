@@ -147,6 +147,10 @@
     }
   }
 
+  &--contact {
+    padding-right: 40px;
+  }
+
   &--message {
     min-height: 142px;
     padding: 16px;
@@ -306,7 +310,7 @@
 
     &--contact {
       width: 500px;
-      padding: 0 15px 14px;
+      padding: 0 65px 14px 15px;
       background-color: #f1f1f1;
     }
 
