@@ -73,11 +73,13 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
+      width: 334px;
     }
 
     &--user {
       display: flex;
       flex-wrap: wrap;
+      width: 350px;
     }
   }
 
@@ -122,11 +124,8 @@
 @media (min-width: $desktop-width) {
   .site-list {
     &--nav {
+      width: 370px;
       font-size: 17px;
-    }
-
-    &--user {
-      width: 350px;
     }
 
     &--new {
