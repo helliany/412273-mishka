@@ -193,6 +193,7 @@
   .offers__wrapper {
     position: relative;
     background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -216,7 +217,7 @@
   .offers__title {
     width: 600px;
     margin: 0 auto;
-    padding: 152px 0 372px;
+    padding: 92px 0 372px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -335,7 +336,7 @@
 
   .offers__title {
     width: 700px;
-    padding: 154px 0 358px;
+    padding: 92px 0 360px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -345,7 +346,7 @@
   }
 
   .offers__item-link {
-    padding-right: 350px;
+    padding: 28px 350px 30px 36px;
   }
 
   .offers__product {

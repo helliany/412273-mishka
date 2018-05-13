@@ -2,6 +2,13 @@ var button = document.querySelector(".main-nav__btn");
 var menu_nav = document.querySelector(".site-list--nav");
 var menu_user = document.querySelector(".site-list--user");
 
+menu_nav.classList.remove("site-list--no-js");
+menu_user.classList.remove("site-list--no-js");
+button.classList.remove("main-nav__btn--no-js");
+menu_nav.classList.add("site-list--js");
+menu_user.classList.add("site-list--js");
+button.classList.add("main-nav__btn--js");
+
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
   button.classList.toggle("main-nav__btn--close");

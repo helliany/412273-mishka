@@ -35,6 +35,14 @@
   outline: none;
   cursor: pointer;
 
+  &--no-js {
+    display: none;
+  }
+
+  &--js {
+    display: block;
+  }
+
   &--close {
     width: 21px;
     height: 20px;
@@ -49,9 +57,10 @@
   }
 
   .main-nav__logo {
-    width: 320px;
-    padding: 21px 0;
-    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    width: 48%;
+    padding: 21px 210px 21px 0;
     border-bottom: none;
   }
 
@@ -67,8 +76,12 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__logo {
-    width: 330px;
-    padding: 8px 80px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 150px;
+    padding: 0;
+    transform: translate(-50%, 0);
   }
 
   .main-nav__logo-image {
