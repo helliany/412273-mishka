@@ -135,8 +135,7 @@
   cursor: pointer;
 
   &--client,
-  &--name,
-  &--contact {
+  &--name {
     padding: 12px 0 14px;
     border-bottom: 2px solid #000000;
 
@@ -160,7 +159,8 @@
   }
 }
 
-.order-form__input--radio:checked + .order-form__label::after {
+.order-form__input--radio:checked + .order-form__label::after,
+.order-form__input--radio + .order-form__label:active::after {
   content: "";
   position: absolute;
   left: -51px;
@@ -171,7 +171,12 @@
   border-radius: 50%;
 }
 
-.order-form__input--checkbox:checked + .order-form__label::after {
+.order-form__input--radio:checked + .order-form__label:active::after {
+  display: none;
+}
+
+.order-form__input--checkbox:checked + .order-form__label::after,
+.order-form__input--checkbox + .order-form__label:active::after {
   content: "";
   position: absolute;
   left: -55px;
@@ -183,12 +188,25 @@
   background-size: 70%;
 }
 
+.order-form__input--checkbox:checked + .order-form__label:active::after {
+  display: none;
+}
+
 .order-form__input--radio:disabled + .order-form__label::before,
 .order-form__input--checkbox:disabled + .order-form__label::before {
   opacity: 0.3;
 }
 
 .order-form__input--contact {
+  padding: 12px 40px 14px 0;
+  border-bottom: 2px solid #000000;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid #62d1ba;
+  }
+
   &:hover + .order-form__input-icon .order-form__icon-path,
   &:focus + .order-form__input-icon .order-form__icon-path,
   &:active + .order-form__input-icon .order-form__icon-path {
@@ -306,7 +324,7 @@
 
     &--contact {
       width: 500px;
-      padding: 0 15px 14px;
+      padding: 0 65px 14px 15px;
       background-color: #f1f1f1;
     }
 
@@ -315,14 +333,16 @@
     }
   }
 
-  .order-form__input--radio:checked + .order-form__label::after {
+  .order-form__input--radio:checked + .order-form__label::after,
+  .order-form__input--radio + .order-form__label:active::after {
     top: 0;
     left: -66px;
     width: 21px;
     height: 21px;
   }
 
-  .order-form__input--checkbox:checked + .order-form__label::after {
+  .order-form__input--checkbox:checked + .order-form__label::after,
+  .order-form__input--checkbox + .order-form__label:active::after {
     top: 2px;
     left: -69px;
     background-size: 100%;

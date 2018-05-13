@@ -1,5 +1,4 @@
 .site-list {
-  display: none;
   margin: 0;
   padding: 0;
   font-size: 17px;
@@ -7,6 +6,14 @@
   font-weight: 700;
   color: #000000;
   list-style: none;
+
+  &--no-js {
+    display: block;
+  }
+
+  &--js {
+    display: none;
+  }
 
   &--open {
     display: block;
@@ -62,18 +69,17 @@
 @media (min-width: $tablet-width) {
   .site-list {
     &--nav {
-      position: absolute;
       z-index: 1;
-      bottom: -73px;
-      left: 0;
       display: flex;
       flex-wrap: wrap;
-      order: 1;
+      justify-content: flex-end;
+      width: 334px;
     }
 
     &--user {
       display: flex;
       flex-wrap: wrap;
+      width: 350px;
     }
   }
 
@@ -98,7 +104,11 @@
   }
 
   .site-list__item-link {
-    padding: 30px 0;
+    padding: 18px 0;
+
+    &--cart {
+      padding: 30px 0;
+    }
   }
 
   .site-list__item-hidden {
@@ -114,31 +124,31 @@
 @media (min-width: $desktop-width) {
   .site-list {
     &--nav {
-      position: static;
-      order: -1;
+      width: 370px;
       font-size: 17px;
     }
 
-    &--user {
-      order: 1;
+    &--new {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      width: 50%;
+      padding-right: 150px;
+      background-color: #f1f1f1;
     }
 
-    &--new {
-      position: absolute;
-      z-index: 1;
-      bottom: -72px;
-      left: 0;
-      display: flex;
+    &--new-index {
+      background-color: #f9f9f9;
     }
   }
 
   .site-list__item {
     &--new {
-      width: 185px;
+      width: 188px;
       font-size: 15px;
 
       &:nth-child(2n) {
-        padding-left: 34px;
+        padding-left: 32px;
       }
     }
 
@@ -149,6 +159,14 @@
       &:nth-child(2n) {
         text-align: right;
         border-left: 1px solid #ececec;
+      }
+    }
+
+    .site-list__item-link {
+      padding: 30px 0 34px;
+
+      &--new {
+        padding: 18px 0;
       }
     }
   }

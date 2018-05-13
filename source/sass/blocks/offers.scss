@@ -193,6 +193,7 @@
   .offers__wrapper {
     position: relative;
     background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -204,19 +205,19 @@
       position: absolute;
       bottom: -14px;
       left: 50%;
-      margin-left: -385px;
-      width: 770px;
+      margin-left: -384px;
+      width: 768px;
       height: 24px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
-      background-size: 770px auto;
+      background-size: 768px auto;
     }
   }
 
   .offers__title {
     width: 600px;
     margin: 0 auto;
-    padding: 152px 0 372px;
+    padding: 92px 0 374px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -231,7 +232,7 @@
   }
 
   .offers__item-link {
-    padding: 29px 167px 30px 36px;
+    padding: 27px 167px 30px 36px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -294,7 +295,7 @@
   .offers__product-image {
     position: absolute;
     z-index: -1;
-    top: 155px;
+    top: 153px;
     right: 50px;
     padding: 0;
   }
@@ -326,16 +327,16 @@
 
     &::after {
       bottom: -18px;
-      margin-left: -625px;
-      width: 1250px;
+      margin-left: -575px;
+      width: 1150px;
       height: 34px;
-      background-size: 1250px auto;
+      background-size: 1150px auto;
     }
   }
 
   .offers__title {
     width: 700px;
-    padding: 154px 0 358px;
+    padding: 92px 0 360px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -345,7 +346,7 @@
   }
 
   .offers__item-link {
-    padding-right: 350px;
+    padding: 28px 350px 30px 36px;
   }
 
   .offers__product {
