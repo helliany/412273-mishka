@@ -135,8 +135,7 @@
   cursor: pointer;
 
   &--client,
-  &--name,
-  &--contact {
+  &--name {
     padding: 12px 0 14px;
     border-bottom: 2px solid #000000;
 
@@ -148,7 +147,14 @@
   }
 
   &--contact {
-    padding-right: 40px;
+    padding: 12px 40px 14px 0;
+    border-bottom: 2px solid #000000;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 2px solid #62d1ba;
+    }
   }
 
   &--message {
