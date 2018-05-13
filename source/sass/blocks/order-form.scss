@@ -146,17 +146,6 @@
     }
   }
 
-  &--contact {
-    padding: 12px 40px 14px 0;
-    border-bottom: 2px solid #000000;
-
-    &:hover,
-    &:focus,
-    &:active {
-      border-bottom: 2px solid #62d1ba;
-    }
-  }
-
   &--message {
     min-height: 142px;
     padding: 16px;
@@ -209,6 +198,15 @@
 }
 
 .order-form__input--contact {
+  padding: 12px 40px 14px 0;
+  border-bottom: 2px solid #000000;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid #62d1ba;
+  }
+
   &:hover + .order-form__input-icon .order-form__icon-path,
   &:focus + .order-form__input-icon .order-form__icon-path,
   &:active + .order-form__input-icon .order-form__icon-path {
