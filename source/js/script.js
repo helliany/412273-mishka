@@ -20,12 +20,14 @@ var btn_offer = document.querySelector(".offers__product-btn");
 var btn_product = document.querySelectorAll(".product__btn");
 var popup = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay");
+var input_focus = document.querySelector("#size-s");
 
 if (btn_offer != null) {
   btn_offer.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal--open");
     overlay.classList.add("overlay--open");
+    input_focus.focus();
   });
 }
 
@@ -43,6 +45,7 @@ if (btn_product != null) {
       evt.preventDefault();
       popup.classList.add("modal--open");
       overlay.classList.add("overlay--open");
+      input_focus.focus();
     });
   }
 }

@@ -111,15 +111,6 @@
     width: 40px;
     border: 2px solid #444444;
   }
-
-  &:hover::before,
-  &:focus::before {
-    border-color: #62d1ba;
-  }
-
-  &:active::before {
-    border-color: rgba(68, 68, 68, 0.3);
-  }
 }
 
 .order-form__input {
@@ -157,6 +148,18 @@
       border: 2px solid #62d1ba;
     }
   }
+}
+
+.order-form__input--radio:hover + .order-form__label--radio::before,
+.order-form__input--checkbox:hover + .order-form__label--checkbox::before,
+.order-form__input--radio:focus + .order-form__label--radio::before,
+.order-form__input--checkbox:focus + .order-form__label--checkbox::before {
+  border-color: #62d1ba;
+}
+
+.order-form__input--radio:active + .order-form__label--radio::before,
+.order-form__input--checkbox:active + .order-form__label--checkbox::before {
+  border-color: rgba(68, 68, 68, 0.3);
 }
 
 .order-form__input--radio:checked + .order-form__label::after,
