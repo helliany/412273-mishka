@@ -58,19 +58,23 @@
   border: 2px solid rgba(68, 68, 68, 0.1);
   user-select: none;
   cursor: pointer;
+}
 
-  &:hover,
-  &:focus {
-    border: 2px solid rgba(68, 68, 68, 0.3);
-  }
+.modal__input:hover + .modal__label,
+.modal__input:focus + .modal__label {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
 
-  &:active {
-    border: 2px solid #62d1ba;
-  }
+.modal__input:active + .modal__label {
+  border: 2px solid #62d1ba;
 }
 
 .modal__input:checked + .modal__label {
   border: 2px solid #62d1ba;
+}
+
+.modal__input:disabled + .modal__label {
+  opacity: 0.5;
 }
 
 .modal__btn {
